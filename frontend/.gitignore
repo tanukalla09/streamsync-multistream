@@ -16,3 +16,5 @@ frontend/dist/
 *.log
 null*
 sk_*
+backend/node_modules/
+backend/uploads/
