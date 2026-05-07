@@ -1,7 +1,7 @@
 const { spawn } = require('child_process');
 const platformsConfig = require('../config/platforms.config');
 
-const FFMPEG_PATH = 'C:\\Users\\kalla tanushree\\Downloads\\ffmpeg-8.1-essentials_build\\ffmpeg-8.1-essentials_build\\bin\\ffmpeg.exe';
+const FFMPEG_PATH = process.env.FFMPEG_PATH || 'ffmpeg';
 
 const buildRtmpUrl = (platform, streamKey, customRtmpUrl) => {
   const config = platformsConfig[platform.name];
